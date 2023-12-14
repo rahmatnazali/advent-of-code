@@ -1,13 +1,11 @@
-from typing import List
-
 from utilities import get_lines_from_input
 
 
-def get_summable_digits(line: str) -> int:
+def get_summable_digits(string_line: str) -> int:
     first_digit = None
     last_digit = None
 
-    for character in line:
+    for character in string_line:
         if character.isnumeric():
             if first_digit is None:
                 first_digit = character
