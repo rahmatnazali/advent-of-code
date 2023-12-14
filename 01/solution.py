@@ -1,4 +1,4 @@
-from utilities import get_lines_from_input
+from utilities import get_lines_from_file
 
 
 def get_summable_digits(string_line: str) -> int:
@@ -15,7 +15,7 @@ def get_summable_digits(string_line: str) -> int:
 
 
 if __name__ == "__main__":
-    lines = get_lines_from_input()
+    lines = get_lines_from_file()
     sum_of_digits = 0
 
     for line in lines:
