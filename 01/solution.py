@@ -1,11 +1,6 @@
 from typing import List
 
-
-def get_lines() -> List[str]:
-    with open('input') as input_file:
-        raw_lines: List[str] = input_file.readlines()
-
-    return [line.strip() for line in raw_lines]
+from utilities import get_lines_from_input
 
 
 def get_summable_digits(line: str) -> int:
@@ -22,7 +17,7 @@ def get_summable_digits(line: str) -> int:
 
 
 if __name__ == "__main__":
-    lines = get_lines()
+    lines = get_lines_from_input()
     sum_of_digits = 0
 
     for line in lines:
